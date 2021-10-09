@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="vse.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,14 +17,15 @@
 		<header class="kontejner__hlavicka">
 
 			<div class="hlavicka">
-				<a href=""><img src="podklady/logo.svg" alt="Logo" width="236" height="35"></a>
-				<nav>
-					<ul>
-						<li><a href="">Last minute</a></li>
-						<li><a href="">Destinace</a></li>
-						<li><a href="">Časté otázky</a></li>
-					</ul>
+
+				<a class="hlavicka__logo" href=""><img src="podklady/logo.svg" alt="Logo" width="236" height="35"></a>
+
+				<nav class="hlavicka__navigace">
+					<a class="hlavicka__navigace__polozka" href="">Last minute</a>
+					<a class="hlavicka__navigace__polozka" href="">Destinace</a>
+					<a class="hlavicka__navigace__polozka" href="">Časté otázky</a>
 				</nav>
+
 			</div>
 
 		</header>
@@ -33,9 +34,13 @@
 
 			<div class="nabidka nabidka--prvni">
 				<article class="nabidka__zajezd nabidka__zajezd--hlavni nabidka__zajezd--palmy">
-					<p>17&nbsp;600&nbsp;Kč</p>
-					<h2>Pohoda pod palmami</h2>
-					<p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+					<strong class="nabidka__zajezd__cena">
+						<span class="nabidka__zajezd__cena--barva">17&nbsp;600&nbsp;Kč</span>
+					</strong>
+					<div class="nabidka__zajezd__meta">
+						<h2 class="nabidka__zajezd__nazev">Pohoda pod&nbsp;palmami</h2>
+						<p class="nabidka__zajezd__text">Nejlepší dovolená pro&nbsp;nejvíc nejlínější lidi na&nbsp;světě</p>
+					</div>
 				</article>
 				<article class="nabidka__zajezd nabidka__zajezd--ostatni nabidka__zajezd--jezero">
 					<p>8&nbsp;490&nbsp;Kč</p>
@@ -82,8 +87,10 @@
 				<h2>Last minute zájezdy</h2>
 				<article class="nabidka__zajezd nabidka__zajezd--hlavni nabidka__zajezd--romantika">
 					<p>15&nbsp;900&nbsp;Kč</p>
-					<h2>Romantika u horského jezera</h2>
-					<p>Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
+					<div class="nabidka__zajezd__meta">
+						<h2 class="nabidka__zajezd__nazev">Romantika u&nbsp;horského jezera</h2>
+						<p>Dechberoucí výhledy na&nbsp;horské štíty a&nbsp;zrcadlovou hladinu jezera.</p>
+					</div>
 				</article>
 				<article class="nabidka__zajezd nabidka__zajezd--ostatni nabidka__zajezd--canyon">
 					<p>18&nbsp;500&nbsp;Kč</p>

@@ -1,16 +1,21 @@
 
 .nabidka {
     display: grid;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .nabidka__zajezd {
     background-color: #B0C4DE;
     background-image: 
-        linear-gradient(hsla(0 0% 0% / 0.1), hsla(0 0% 0% / 0.1)), 
+        linear-gradient(hsla(0 0% 0% / 0.3), hsla(0 0% 0% / 0.3)), 
         var(--bg-nabidka);
     background-position: center 80%;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #ffffff;
 }
 
 .nabidka__zajezd--palmy {--bg-nabidka: url('podklady/palmy.jpg');}
@@ -21,15 +26,32 @@
 .nabidka__zajezd--kanary {--bg-nabidka: url('podklady/zatoka.jpg');}
 
 .nabidka__zajezd--hlavni {
-    min-height: 260px;
+    min-height: 220px;
     background-position: center;
-    grid-column: 1 / -1;
-    grid-row: span 2;
 }
 
 .nabidka__zajezd--ostatni {
     min-height: 160px;
 }
+ 
+.nabidka__zajezd__cena,
+.nabidka__zajezd__nazev,
+.nabidka__zajezd__text {
+    margin: 0;
+    line-height: 2rem;
+}
+
+.nabidka__zajezd__cena {
+    font-weight: 500;
+}
+
+.nabidka__zajezd__cena--barva {
+    background-color: #F03000;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
 
 
 @media screen and (min-width: 500px) {
@@ -37,5 +59,10 @@
 .nabidka {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    }
+
+.nabidka__zajezd--hlavni {
+    grid-column: 1 / -1;
+    grid-row: span 2;
     }
 }

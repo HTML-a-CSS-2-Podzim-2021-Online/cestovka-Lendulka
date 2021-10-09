@@ -1,4 +1,32 @@
 
 .hlavicka {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 6.5rem;
+}
+
+.hlavicka__logo {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.hlavicka__navigace {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hlavicka__navigace__polozka {
+    display: flex;
+    padding: 1rem;
+    text-decoration: none;
+    color: #F03000;
+    font-weight: 600;
+}
+
+.hlavicka__navigace__polozka:hover,
+.hlavicka__navigace__polozka:focus {
+    background-color: #F03000;
+    color: #ffffff;
 }
