@@ -1,0 +1,30 @@
+
+@import url('hlavicka.css');
+@import url('nabidka.css');
+@import url('novinky.css');
+@import url('paticka.css');
+@import url('sluzby.css');
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+}
+
+.kontejner {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.kontejner__hlavicka {grid-area: header;}
+.kontejner__obsah {grid-area: main;}
+.kontejner__paticka {grid-area: footer;}
+

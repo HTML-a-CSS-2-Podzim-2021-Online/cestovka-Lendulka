@@ -1,0 +1,14 @@
+
+.novinky {
+    display: grid;
+}
+
+.novinky__polozka {
+    display: flex;
+    flex-direction: column;
+}
+
+.novinky__polozka__nazev,
+.novinky__polozka__text {
+    margin: 0;
+}

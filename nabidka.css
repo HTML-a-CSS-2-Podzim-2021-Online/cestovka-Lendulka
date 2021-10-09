@@ -1,0 +1,41 @@
+
+.nabidka {
+    display: grid;
+    gap: 10px;
+}
+
+.nabidka__zajezd {
+    background-color: #B0C4DE;
+    background-image: 
+        linear-gradient(hsla(0 0% 0% / 0.1), hsla(0 0% 0% / 0.1)), 
+        var(--bg-nabidka);
+    background-position: center 80%;
+    background-size: cover;
+}
+
+.nabidka__zajezd--palmy {--bg-nabidka: url('podklady/palmy.jpg');}
+.nabidka__zajezd--jezero {--bg-nabidka: url('podklady/jezero.jpg');}
+.nabidka__zajezd--kolo {--bg-nabidka: url('podklady/nakole.jpg');}
+.nabidka__zajezd--romantika {--bg-nabidka: url('podklady/lodicka.jpg');}
+.nabidka__zajezd--canyon {--bg-nabidka: url('podklady/podkova.jpg');}
+.nabidka__zajezd--kanary {--bg-nabidka: url('podklady/zatoka.jpg');}
+
+.nabidka__zajezd--hlavni {
+    min-height: 260px;
+    background-position: center;
+    grid-column: 1 / -1;
+    grid-row: span 2;
+}
+
+.nabidka__zajezd--ostatni {
+    min-height: 160px;
+}
+
+
+@media screen and (min-width: 500px) {
+
+.nabidka {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+}
