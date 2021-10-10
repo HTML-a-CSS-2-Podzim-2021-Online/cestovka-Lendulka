@@ -2,7 +2,6 @@
 .hlavicka {
     display: flex;
     flex-direction: column;
-    min-height: 6.5rem;
 }
 
 .hlavicka__logo {
@@ -13,12 +12,14 @@
 
 .hlavicka__navigace {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .hlavicka__navigace__polozka {
     display: flex;
-    padding: 1rem 0.6rem;
+    flex: 1;
+    justify-content: center;
+    padding: 1rem 0.4rem;
     text-decoration: none;
     color: #F03000;
     font-size: 1rem;
@@ -31,21 +32,42 @@
     color: #ffffff;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
+
     .hlavicka {
         flex-direction: row;
-        justify-content: space-between;
         min-height: 4rem;
     } 
 
     .hlavicka__logo {
         padding: 0;
         align-items: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .hlavicka__navigace {
+        flex: 1;
     }
 
     .hlavicka__navigace__polozka {
         align-items: center;
         font-size: 0.9rem;
-        max-height: 3.6rem;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .hlavicka {
+        justify-content: space-between;
+    }
+
+    .hlavicka__navigace {
+        flex: 0 1 auto;
+        width: 400px; 
+    }
+
+    .hlavicka__navigace__polozka {
+        font-size: 1rem;
     }
 }

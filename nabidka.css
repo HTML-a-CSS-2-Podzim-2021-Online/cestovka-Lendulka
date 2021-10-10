@@ -26,12 +26,12 @@
 .nabidka__zajezd--kanary {--bg-nabidka: url('podklady/zatoka.jpg');}
 
 .nabidka__zajezd--hlavni {
-    min-height: 220px;
+    min-height: 250px;
     background-position: center;
 }
 
 .nabidka__zajezd--ostatni {
-    min-height: 160px;
+    min-height: 150px;
 }
  
 .nabidka__zajezd__cena,
@@ -53,11 +53,11 @@
 }
 
 .nabidka__nadpis {
-    margin: 0;
+    margin: 1.2rem 0;
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
 
 .nabidka {
     grid-template-columns: repeat(2, 1fr);
@@ -67,5 +67,33 @@
 .nabidka__zajezd--hlavni {
     grid-column: 1 / -1;
     grid-row: span 2;
+    min-height: 280px;
+    }
+
+.nabidka__zajezd--ostatni {
+    min-height: 170px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+.nabidka {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+
+.nabidka__zajezd--vlevo {
+    display: grid;
+    grid-column: 1 / span 2;
+    }
+
+.nabidka__zajezd--vpravo {
+    display: grid;
+    grid-column: 2 / span 2;
+    }
+
+.nabidka__zajezd--canyon {
+    grid-column: 1;
+    grid-row: 1
     }
 }
