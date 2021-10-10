@@ -1,4 +1,16 @@
 
+
 .paticka {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #615f5f;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 3.5rem;
+}
+
+.paticka__text {
+    margin: 0;
 }

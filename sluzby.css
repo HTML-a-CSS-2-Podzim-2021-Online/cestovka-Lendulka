@@ -37,3 +37,14 @@
 .sluzby__druh__logo img {
     padding-top: 0.5rem;
 }
+
+@media screen and (min-width: 600px) {
+    .sluzby {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .sluzby__druh {
+        flex-direction: column;
+    }
+}

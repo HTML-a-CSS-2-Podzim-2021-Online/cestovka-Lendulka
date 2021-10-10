@@ -2,7 +2,6 @@
 .hlavicka {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 6.5rem;
 }
 
@@ -30,4 +29,23 @@
 .hlavicka__navigace__polozka:focus {
     background-color: #F03000;
     color: #ffffff;
+}
+
+@media screen and (min-width: 600px) {
+    .hlavicka {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 4rem;
+    } 
+
+    .hlavicka__logo {
+        padding: 0;
+        align-items: center;
+    }
+
+    .hlavicka__navigace__polozka {
+        align-items: center;
+        font-size: 0.9rem;
+        max-height: 3.6rem;
+    }
 }
