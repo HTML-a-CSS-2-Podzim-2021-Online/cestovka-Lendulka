@@ -41,7 +41,8 @@
     line-height: 2rem;
 }
 
-.nabidka__zajezd__cena {
+.nabidka__zajezd__cena,
+.nabidka__zajezd__text {
     font-weight: 500;
 }
 
@@ -51,6 +52,9 @@
     font-size: 0.9rem;
 }
 
+.nabidka__nadpis {
+    margin: 0;
+}
 
 
 

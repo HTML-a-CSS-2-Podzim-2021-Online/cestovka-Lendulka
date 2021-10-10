@@ -1,18 +1,39 @@
 
 .sluzby {
     display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
 .sluzby__druh {
     display: flex;
+    min-height: 7rem;
+    padding: 0.8rem 1.1rem;
+    background-color: #e0dcdc;
 }
 
 .sluzby__druh__meta {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .sluzby__druh__nazev,
 .sluzby__druh__text {
-    margin: 0;
+    margin: 0;  
+    padding: 0 2rem 0 1.5rem;
+}
+
+.sluzby__druh__nazev {
+    font-size: 1rem;
+    color: #F03000;
+}
+
+.sluzby__druh__text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.sluzby__druh__logo img {
+    padding-top: 0.5rem;
 }

@@ -1,14 +1,40 @@
 
 .novinky {
     display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .novinky__polozka {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 150px;
+    padding: 0.8rem 1.1rem;
+    background-color: #e0dcdc;
 }
 
 .novinky__polozka__nazev,
 .novinky__polozka__text {
+    margin: 0;
+}
+
+.novinky__polozka__nazev {
+    font-size: 0.9rem;
+    color: #F03000;
+}
+
+.novinky__polozka__text {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.novinky__polozka__datum {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #615f5f;
+}
+
+.novinky__nadpis {
     margin: 0;
 }
