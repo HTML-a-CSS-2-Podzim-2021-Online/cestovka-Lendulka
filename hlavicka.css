@@ -26,6 +26,10 @@
     font-weight: 600;
 }
 
+.hlavicka__navigace__polozka--zarovnani {
+    text-align: center;
+}
+
 .hlavicka__navigace__polozka:hover,
 .hlavicka__navigace__polozka:focus {
     background-color: #F03000;

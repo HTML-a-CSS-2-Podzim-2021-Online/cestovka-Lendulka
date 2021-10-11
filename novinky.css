@@ -2,14 +2,14 @@
 .novinky {
     display: grid;
     gap: 1rem;
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0;
 }
 
 .novinky__polozka {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 150px;
+    min-height: 12rem;
     padding: 0.8rem 1.1rem;
     background-color: #e0dcdc;
 }
@@ -20,7 +20,7 @@
 }
 
 .novinky__polozka__nazev {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #F03000;
 }
 
@@ -30,11 +30,47 @@
 }
 
 .novinky__polozka__datum {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #615f5f;
 }
 
 .novinky__nadpis {
-    margin: 0;
+    margin: 1.2rem 0;
+}
+
+@media screen and (min-width: 650px) {
+    .novinky__polozka {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .novinky__polozka__nazev,
+    .novinky__polozka__text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .novinky {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr;
+    }
+
+    .novinky__polozka {
+        grid-row: 2;
+        min-height: 13rem;
+        padding: 0.6rem 0.9rem;
+    }
+    
+    .novinky__polozka__nazev {
+        min-height: 2.2rem;
+        font-size: 1rem;  
+    }
+
+    .novinky__polozka__text {
+        min-height: 5.5rem;
+        font-size: 0.9rem;
+        display: flex;
+    }
 }

@@ -8,7 +8,7 @@
 .sluzby__druh {
     display: flex;
     min-height: 7rem;
-    padding: 0.8rem 1.1rem;
+    padding: 0.8rem 1.3rem;
     background-color: #e0dcdc;
 }
 
@@ -72,5 +72,24 @@
         padding-top: 0;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .sluzby {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .sluzby__druh__text {
+        min-height: 4rem;
+    }
+
+    .sluzby__druh__nazev {
+        font-size: .9rem;
+    }
+
+    .sluzby__druh__text {
+        font-size: .8rem;
     }
 }

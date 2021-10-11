@@ -35,15 +35,18 @@
 }
  
 .nabidka__zajezd__cena,
-.nabidka__zajezd__nazev,
-.nabidka__zajezd__text {
+.nabidka__zajezd__nazev {
     margin: 0;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 .nabidka__zajezd__cena,
 .nabidka__zajezd__text {
     font-weight: 500;
+}
+
+.nabidka__zajezd__text {
+    line-height: 1.5rem;
 }
 
 .nabidka__zajezd__cena--barva {
@@ -56,12 +59,18 @@
     margin: 1.2rem 0;
 }
 
-
 @media screen and (min-width: 650px) {
 
-.nabidka {
+.nabidka--prvni {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    }
+
+.nabidka--druha {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, 1fr);
     }
 
 .nabidka__zajezd--hlavni {
@@ -73,27 +82,40 @@
 .nabidka__zajezd--ostatni {
     min-height: 170px;
     }
+
+.nabidka__zajezd__meta {
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    }
 }
 
 @media screen and (min-width: 850px) {
 
-.nabidka {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    .nabidka--prvni {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .nabidka--druha {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, 1fr);
     }
 
-.nabidka__zajezd--vlevo {
-    display: grid;
-    grid-column: 1 / span 2;
+    .nabidka__zajezd--vlevo {
+        grid-column: 1 / span 2;
     }
 
-.nabidka__zajezd--vpravo {
-    display: grid;
-    grid-column: 2 / span 2;
+    .nabidka__zajezd--vpravo {
+        grid-column: 2 / span 2;
     }
 
-.nabidka__zajezd--canyon {
-    grid-column: 1;
-    grid-row: 1
+    .nabidka__nadpis {
+        grid-column: 1 / -1;
+        margin: 0;
+    }
+
+    .nabidka__zajezd--canyon {
+        grid-area: 2 / 1;
     }
 }
