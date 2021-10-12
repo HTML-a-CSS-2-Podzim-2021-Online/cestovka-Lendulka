@@ -80,16 +80,20 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
+    
+    .sluzby__druh {
+        padding: 1rem 1.2rem;
+    }
 
     .sluzby__druh__text {
         min-height: 4rem;
     }
 
     .sluzby__druh__nazev {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .sluzby__druh__text {
-        font-size: .8rem;
+        font-size: 0.85rem;
     }
 }
