@@ -1,7 +1,7 @@
 
 .sluzby {
     display: grid;
-    gap: 1rem;
+    gap: var(--gap);
     margin: 2rem 0;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .sluzby__druh__nazev {
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     color: #F03000;
 }
 
@@ -89,9 +89,10 @@
         min-height: 4rem;
     }
 
+    /*
     .sluzby__druh__nazev {
         font-size: 1rem;
-    }
+    }*/
 
     .sluzby__druh__text {
         font-size: 0.85rem;

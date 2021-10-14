@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.hlavicka__nadpis {
+    display: none;
+}
+
 .hlavicka__logo {
     display: flex;
     justify-content: center;

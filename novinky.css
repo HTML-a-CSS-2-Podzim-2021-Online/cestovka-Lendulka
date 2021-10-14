@@ -1,7 +1,7 @@
 
 .novinky {
     display: grid;
-    gap: 1rem;
+    gap: var(--gap);
     margin: 2rem 0;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .novinky__polozka__nazev {
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     color: #F03000;
     display: flex;
     align-items: center;

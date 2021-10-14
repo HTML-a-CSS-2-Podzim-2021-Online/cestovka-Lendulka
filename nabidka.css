@@ -1,7 +1,7 @@
 
 .nabidka {
     display: grid;
-    gap: 1rem;
+    gap: var(--gap);
 }
 
 .nabidka__zajezd {
