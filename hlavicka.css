@@ -1,4 +1,11 @@
 
+.hlavicka__navigace__polozka {
+    --padding: 1rem 0.4rem;
+    --font-size-maly: 1rem;
+    --font-size-stredni: 0.9rem;
+    --font-size-velky: 1rem;
+}
+
 .hlavicka {
     display: flex;
     flex-direction: column;
@@ -16,28 +23,24 @@
 
 .hlavicka__navigace {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .hlavicka__navigace__polozka {
     display: flex;
     flex: 1;
     justify-content: center;
-    padding: 1rem 0.4rem;
-    text-decoration: none;
-    color: #F03000;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.hlavicka__navigace__polozka--zarovnani {
     text-align: center;
+    padding: var(--padding);
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: var(--font-size-maly);
+    font-weight: 600;
 }
 
 .hlavicka__navigace__polozka:hover,
 .hlavicka__navigace__polozka:focus {
-    background-color: #F03000;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 @media screen and (min-width: 650px) {
@@ -60,7 +63,7 @@
 
     .hlavicka__navigace__polozka {
         align-items: center;
-        font-size: 0.9rem;
+        font-size: var(--font-size-stredni);
     }
 }
 
@@ -72,10 +75,10 @@
 
     .hlavicka__navigace {
         flex: 0 1 auto;
-        width: 400px; 
+        width: 25rem; 
     }
 
     .hlavicka__navigace__polozka {
-        font-size: 1rem;
+        font-size: var(--font-size-velky);
     }
 }

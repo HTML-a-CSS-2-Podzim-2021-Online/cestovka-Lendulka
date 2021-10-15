@@ -7,6 +7,8 @@
 
 :root {
     --gap: 1rem;
+    --color-primary: #F03000;
+    --color-secondary: #ffffff;
 }
 
 html { box-sizing: border-box; }
@@ -33,4 +35,8 @@ body {
 .kontejner__hlavicka {grid-area: header;}
 .kontejner__obsah {grid-area: main;}
 .kontejner__paticka {grid-area: footer;}
+
+.kontejner__obsah {
+    margin: 0.5rem 0;
+}
 

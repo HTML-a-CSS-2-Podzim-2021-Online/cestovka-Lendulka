@@ -1,21 +1,45 @@
 
+.nabidka__zajezd {
+    --bg-color: #6b78c0;
+    --padding-maly: 1rem;
+    --padding-stredni: 1.2rem;
+}
+
+.nabidka__zajezd--hlavni {
+    --height-maly: 15rem;
+    --height-stredni: 16rem;
+    --height-velky: 17rem;
+}
+
+.nabidka__zajezd--ostatni {
+    --height-maly: 9rem;
+    --height-stredni: 11rem;
+    --height-velky: 12rem;
+}
+
+.nabidka__zajezd__meta {
+    --height-maly: 4.5rem;
+    --height-stredni: 5.5rem;
+}
+
 .nabidka {
     display: grid;
     gap: var(--gap);
 }
 
 .nabidka__zajezd {
-    background-color: #B0C4DE;
+    background-color: var(--bg-color);
     background-image: 
         linear-gradient(hsla(0 0% 0% / 0.3), hsla(0 0% 0% / 0.3)), 
         var(--bg-nabidka);
     background-position: center 80%;
     background-size: cover;
+    text-shadow: 0 0 4px hsl(0deg 0% 0% / 90%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
-    color: #ffffff;
+    padding: var(--padding-maly);
+    color: var(--color-secondary);
 }
 
 .nabidka__zajezd--palmy {--bg-nabidka: url('podklady/palmy.jpg');}
@@ -26,18 +50,25 @@
 .nabidka__zajezd--kanary {--bg-nabidka: url('podklady/zatoka.jpg');}
 
 .nabidka__zajezd--hlavni {
-    min-height: 250px;
+    min-height: var(--height-maly);
     background-position: center;
 }
 
 .nabidka__zajezd--ostatni {
-    min-height: 150px;
+    min-height: var(--height-maly);
+}
+
+.nabidka__zajezd__meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: var(--height-maly);
 }
  
 .nabidka__zajezd__cena,
-.nabidka__zajezd__nazev {
+.nabidka__zajezd__nazev,
+.nabidka__zajezd__text {
     margin: 0;
-    line-height: 1.8rem;
 }
 
 .nabidka__zajezd__cena,
@@ -45,12 +76,12 @@
     font-weight: 500;
 }
 
-.nabidka__zajezd__text {
-    line-height: 1.5rem;
+.nabidka__zajezd__cena {
+    padding: 0.5rem 0;
 }
 
 .nabidka__zajezd__cena--barva {
-    background-color: #F03000;
+    background-color: var(--color-primary);
     padding: 0.5rem;
     font-size: 0.9rem;
 }
@@ -73,20 +104,23 @@
     grid-template-rows: auto repeat(3, 1fr);
     }
 
+.nabidka__zajezd {
+    padding: var(--padding-stredni);
+    }
+
 .nabidka__zajezd--hlavni {
     grid-column: 1 / -1;
     grid-row: span 2;
-    min-height: 280px;
+    min-height: var(--height-stredni);
     }
 
 .nabidka__zajezd--ostatni {
-    min-height: 170px;
+    min-height: var(--height-stredni);
     }
 
 .nabidka__zajezd__meta {
-    display: flex;
-    flex-direction: column;
-    min-height: 80px;
+    justify-content: space-around;
+    min-height: var(--height-stredni);
     }
 }
 
@@ -108,14 +142,19 @@
 
     .nabidka__zajezd--vpravo {
         grid-column: 2 / span 2;
+        grid-row: 2 / span 2;
     }
 
     .nabidka__nadpis {
         grid-column: 1 / -1;
-        margin: 0;
+        margin: 1.2rem 0;
     }
 
-    .nabidka__zajezd--canyon {
-        grid-area: 2 / 1;
+    .nabidka__zajezd--hlavni {
+        min-height: var(--height-velky);
+    }
+    
+    .nabidka__zajezd--ostatni {
+        min-height: var(--height-velky);
     }
 }
