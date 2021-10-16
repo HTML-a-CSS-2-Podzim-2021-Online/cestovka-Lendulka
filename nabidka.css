@@ -1,6 +1,5 @@
 
 .nabidka__zajezd {
-    --bg-color: #6b78c0;
     --padding-maly: 1rem;
     --padding-stredni: 1.2rem;
 }
@@ -28,7 +27,7 @@
 }
 
 .nabidka__zajezd {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-primary);
     background-image: 
         linear-gradient(hsla(0 0% 0% / 0.3), hsla(0 0% 0% / 0.3)), 
         var(--bg-nabidka);

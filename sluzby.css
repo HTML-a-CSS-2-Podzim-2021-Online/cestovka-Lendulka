@@ -1,4 +1,17 @@
 
+.sluzby__druh {
+    --height-maly: 7rem;
+    --height-stredni: 11rem;
+    --padding-maly: 0.8rem 1.3rem;
+    --padding-stredni: 1.1rem 1.3rem;
+    --padding-velky: 1rem 1.2rem;
+}
+
+.sluzby__druh__text {
+    --font-size-maly: 0.9rem;
+    --font-size-velky: 0.85rem;
+}
+
 .sluzby {
     display: grid;
     gap: var(--gap);
@@ -7,9 +20,13 @@
 
 .sluzby__druh {
     display: flex;
-    min-height: 7rem;
-    padding: 0.8rem 1.3rem;
-    background-color: #e0dcdc;
+    min-height: var(--height-maly);
+    padding: var(--padding-maly);
+    background-color: var(--bg-color-secondary);
+}
+
+.sluzby__druh__logo {
+    padding-top: 0.5rem;
 }
 
 .sluzby__druh__meta {
@@ -18,27 +35,21 @@
     justify-content: space-evenly;
 }
 
-.sluzby__druh__nazev,
-.sluzby__druh__text {
+.sluzby__druh__nazev {
+    color: var(--color-primary);
     margin: 0;  
     padding: 0 2rem;
 }
 
-.sluzby__druh__nazev {
-    /*font-size: 1rem;*/
-    color: #F03000;
-}
-
 .sluzby__druh__text {
-    font-size: 0.9rem;
+    font-size: var(--font-size-maly);
     font-weight: 500;
-}
-
-.sluzby__druh__logo {
-    padding-top: 0.5rem;
+    margin: 0;  
+    padding: 0 2rem;
 }
 
 @media screen and (min-width: 650px) {
+
     .sluzby {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -47,13 +58,18 @@
     .sluzby__druh {
         flex-direction: column;
         justify-content: space-between;
-        min-height: 12rem;  
-        padding: 1rem 1.3rem;
+        min-height: var(--height-stredni);
+        padding: var(--padding-stredni);
+    }
+
+    .sluzby__druh__logo {
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .sluzby__druh__meta {
-        min-height: 8rem;
-        padding: 0;
+        min-height: 7rem;
     }
 
     .sluzby__druh__nazev,
@@ -64,37 +80,24 @@
     }
 
     .sluzby__druh__text {
-        text-align: center;
         min-height: 3.4rem;
-    }
-
-    .sluzby__druh__logo {
-        padding-top: 0;
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
 }
 
 @media screen and (min-width: 850px) {
+
     .sluzby {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
     
     .sluzby__druh {
-        padding: 1rem 1.2rem;
+        padding: var(--padding-velky);
     }
 
     .sluzby__druh__text {
         min-height: 4rem;
-    }
-
-    /*
-    .sluzby__druh__nazev {
-        font-size: 1rem;
-    }*/
-
-    .sluzby__druh__text {
-        font-size: 0.85rem;
+        font-size: var(--font-size-velky);
     }
 }

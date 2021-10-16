@@ -1,4 +1,26 @@
 
+.novinky__polozka {
+    --padding-maly: 0.8rem 1.1rem;
+    --padding-stredni: 0.9rem 1.5rem;
+    --padding-velky: 0.6rem 0.9rem;
+}
+
+.novinky__polozka__datum {
+    --color-datum: #5a5858;
+}
+
+.novinky__polozka__nazev {
+    --font-size-maly: 1rem;
+    --font-size-stredni: 1.1rem;
+    --font-size-velky: 1rem;
+}
+
+.novinky__polozka__text {
+    --font-size-maly: 0.9rem;
+    --font-size-stredni: 1rem;
+    --font-size-velky: 0.9rem;
+}
+
 .novinky {
     display: grid;
     gap: var(--gap);
@@ -9,9 +31,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 12rem;
-    padding: 0.8rem 1.1rem;
-    background-color: #e0dcdc;
+    min-height: 10rem;
+    padding: var(--padding-maly);
+    background-color: var(--bg-color-secondary);
 }
 
 .novinky__polozka__nazev,
@@ -20,21 +42,22 @@
 }
 
 .novinky__polozka__nazev {
-    /*font-size: 1rem;*/
-    color: #F03000;
-    display: flex;
+    color: var(--color-primary);
+    font-size: var(--font-size-maly);
+    /*display: flex;
     align-items: center;
+}*/
 }
 
 .novinky__polozka__text {
-    font-size: 0.9rem;
+    font-size: var(--font-size-maly);
     font-weight: 600;
 }
 
 .novinky__polozka__datum {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    color: #615f5f;
+    color: var(--color-datum);
 }
 
 .novinky__nadpis {
@@ -44,15 +67,15 @@
 @media screen and (min-width: 650px) {
 
     .novinky__polozka {
-        padding: 0.9rem 1.5rem;
+        padding: var(--padding-stredni);
     }
 
     .novinky__polozka__nazev {
-        font-size: 1.1rem;
+        font-size: var(--font-size-stredni);
     }
 
     .novinky__polozka__text {
-        font-size: 1rem;
+        font-size: var(--font-size-stredni);
     }
 }
 
@@ -65,18 +88,18 @@
 
     .novinky__polozka {
         grid-row: 2;
-        min-height: 13rem;
-        padding: 0.6rem 0.9rem;
+        min-height: 14rem;
+        padding: var(--padding-velky);
     }
     
     .novinky__polozka__nazev {
-        /*min-height: 2.2rem;*/
-        font-size: 1rem;  
+        min-height: 2.2rem;
+        font-size: var(--font-size-velky);
     }
 
     .novinky__polozka__text {
         min-height: 5.5rem;
-        font-size: 0.9rem;
-        display: flex;
+        font-size: var(--font-size-velky);
+        /*display: flex;*/
     }
 }

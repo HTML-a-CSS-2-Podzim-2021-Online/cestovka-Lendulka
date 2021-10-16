@@ -1,15 +1,27 @@
 
 .paticka {
+    --height-maly: 3.5rem;
+    --height-stredni: 4rem;
+}
+
+.paticka {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #615f5f;
-    color: #ffffff;
+    background-color: var(--bg-color-paticka);
+    color: var(--color-secondary);
     font-size: 0.9rem;
     font-weight: 500;
-    height: 3.5rem;
+    height: var(--height-maly);
 }
 
 .paticka__text {
     margin: 0;
+}
+
+@media screen and (min-width: 650px) {
+    
+    .paticka {
+        height: var(--height-stredni);
+    }
 }

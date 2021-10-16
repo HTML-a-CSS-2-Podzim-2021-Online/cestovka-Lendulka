@@ -9,6 +9,9 @@
     --gap: 1rem;
     --color-primary: #F03000;
     --color-secondary: #ffffff;
+    --bg-color-primary: #6b78c0;
+    --bg-color-secondary: #e0dcdc;
+    --bg-color-paticka: #615f5f;
 }
 
 html { box-sizing: border-box; }
