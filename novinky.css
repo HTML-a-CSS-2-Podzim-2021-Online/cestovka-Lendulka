@@ -1,5 +1,7 @@
 
 .novinky__polozka {
+    --height-maly: 12rem;
+    --height-velky: 14rem;
     --padding-maly: 0.8rem 1.1rem;
     --padding-stredni: 0.9rem 1.5rem;
     --padding-velky: 0.6rem 0.9rem;
@@ -31,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 10rem;
+    min-height: var(--height-maly);
     padding: var(--padding-maly);
     background-color: var(--bg-color-secondary);
 }
@@ -44,9 +46,6 @@
 .novinky__polozka__nazev {
     color: var(--color-primary);
     font-size: var(--font-size-maly);
-    /*display: flex;
-    align-items: center;
-}*/
 }
 
 .novinky__polozka__text {
@@ -88,11 +87,13 @@
 
     .novinky__polozka {
         grid-row: 2;
-        min-height: 14rem;
+        min-height: var(--height-velky);
         padding: var(--padding-velky);
     }
     
     .novinky__polozka__nazev {
+        display: flex;
+        align-items: center;
         min-height: 2.2rem;
         font-size: var(--font-size-velky);
     }
@@ -100,6 +101,5 @@
     .novinky__polozka__text {
         min-height: 5.5rem;
         font-size: var(--font-size-velky);
-        /*display: flex;*/
     }
 }
